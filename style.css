@@ -62,7 +62,7 @@ body{
     background-color: #fff;
     height: 90vw;
     width: 90vw;
-    margin: 15vh auto 0;
+    margin: 5vh auto 0;
     display: grid;
     grid-template-columns: 33.3333% 33.3333% 33.3333%;
     grid-template-rows: 33.3333% 33.3333% 33.3333%;
@@ -150,12 +150,12 @@ button.boxes{ /*reset button default styling */
     .reset{
         width: 50vw;
         height: 6vh;
-        margin-top: 10vh;
+        margin-top: 5vh;
     }
     .new-game{
         width: 50vw;
         height: 6vh;
-        margin-top: 10vh;
+        margin-top: 5vh;
     }
     .winner{
         font-size: 4rem !important;

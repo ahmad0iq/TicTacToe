@@ -45,9 +45,9 @@ boxes.forEach((box) => {
 const checkWinner = (box) => {
     let isDraw = true;
     for(let pattern of winPattern){
-        let pos1 = boxes[pattern[0]].innerText;
-        let pos2 = boxes[pattern[1]].innerText;
-        let pos3 = boxes[pattern[2]].innerText;
+        let pos1 = boxes[pattern[0]].innerText.trim();
+        let pos2 = boxes[pattern[1]].innerText.trim();
+        let pos3 = boxes[pattern[2]].innerText.trim();
 
         if(pos1 != "" && pos2 != "" && pos3 != "" ){
             if(pos1===pos2 && pos2 === pos3){
@@ -55,12 +55,13 @@ const checkWinner = (box) => {
                 boxes.forEach((box) => {
                     box.disabled=true;
                 });
+                return;
             }
         }
     }
 
     boxes.forEach((box) => {
-        if (box.innerText === ""){
+        if (box.innerText.trim() === ""){
             isDraw = false;
         }
     });
