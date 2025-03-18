@@ -114,3 +114,10 @@ reset.addEventListener("click", () => {
     x.disabled=false;
     o.disabled=false;
 })
+
+
+
+
+if("serviceWorker" in navigator){
+    navigator.serviceWorker.register("/sw.js")
+}
